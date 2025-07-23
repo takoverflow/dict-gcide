@@ -33,21 +33,22 @@ pkgs.stdenv.mkDerivation rec {
     hash = "sha256-45ITB4SnyRycjchdseFP5J+XhZfp6J2Dm5q+DJ/N4A4=";
   };
 
-
-  buildInputs = with pkgs; [
-    ## Needed for: autoreconf
-    autoconf
-    automake
-    ## Needed for: make
-    bison
-    flex
-    ## Needed for: dictzip
-    dict
-  ]
-  ++ [
-    gcide
-    libmaa
-  ];
+  buildInputs =
+    with pkgs;
+    [
+      ## Needed for: autoreconf
+      autoconf
+      automake
+      ## Needed for: make
+      bison
+      flex
+      ## Needed for: dictzip
+      dict
+    ]
+    ++ [
+      gcide
+      libmaa
+    ];
 
   patchPhase = ''
     sed -Ei "/The Collaborative International Dictionary of English v.${_major_debver}/ {
