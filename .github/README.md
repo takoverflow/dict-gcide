@@ -81,7 +81,9 @@ This repository may be installed, and managed, via Nix Flake
   ## Add `dict-gcide` to `services.dictd.DBs` list
   services.dictd = {
     enable = true;
-    DBs = [ dict-gcide ];
+    DBs = [
+      (pkgs.callPackage  dict-gcide { inherit pkgs; })
+    ];
   };
 }
 ```
