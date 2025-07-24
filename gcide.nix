@@ -31,7 +31,7 @@ pkgs.stdenv.mkDerivation rec {
     description = "GNU version of the Collaborative International Dictionary of English for dictd et al";
     homepage = "https://gcide.gnu.org.ua/";
     license = pkgs.lib.licenses.gpl3Plus;
-    maintainers = with pkgs.lib.maintainers; [
+    maintainers = [
       {
         email = "S0AndS0@digital-mercenaries.com";
         github = "S0AndS0";

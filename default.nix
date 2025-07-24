@@ -107,7 +107,7 @@ pkgs.stdenv.mkDerivation rec {
     description = "GNU version of the Collaborative International Dictionary of English for dictd et al";
     homepage = "https://deb.debian.org/debian/pool/main/d/${pname}";
     license = pkgs.lib.licenses.gpl3Plus;
-    maintainers = with pkgs.lib.maintainers; [
+    maintainers = [
       {
         email = "S0AndS0@digital-mercenaries.com";
         github = "S0AndS0";
