@@ -55,10 +55,7 @@ This repository may be installed, and managed, via Nix Flake
   inputs = {
     nixpkgs.url = "github:NixOs/nixpkgs-24.05";
 
-    dict-gcide = {
-      url = "github:nix-utilities/dict-gcide-main";
-      flake = false;
-    };
+    dict-gcide.url = "github:nix-utilities/dict-gcide-main";
   };
   outputs = { self, nixpkgs, dict-gcide }@attrs: {
     nixosConfigurations."your-host-name" = nixpkgs.lib.nixosSystem {
