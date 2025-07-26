@@ -7,9 +7,9 @@
 let
   ## Sed scripts are versioned to discourage forgetting to yoink updates from AUR
   sed-scripts = {
-    check = ./sed-scripts/${version}-check.sed;
-    fixes = ./sed-scripts/${version}-fixes.sed;
-    post_webfilter = ./sed-scripts/${version}-post_webfilter.sed;
+    check = ./sed-scripts/check.sed;
+    fixes = ./sed-scripts/fixes.sed;
+    post_webfilter = ./sed-scripts/post_webfilter.sed;
   };
 
   ## TODO: make this not ugly?
