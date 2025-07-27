@@ -101,8 +101,13 @@ stdenv.mkDerivation rec {
     description = "GNU version of the Collaborative International Dictionary of English";
     homepage = "https://gcide.gnu.org.ua/";
     license = lib.licenses.gpl3Plus;
-    maintainers = with lib.maintainers; [
-      S0AndS0
+    maintainers = [
+      {
+        email = "S0AndS0@digital-mercenaries.com";
+        github = "S0AndS0";
+        githubId = 4116150;
+        name = "S0AndS0";
+      }
     ];
     platforms = lib.platforms.unix;
   };
