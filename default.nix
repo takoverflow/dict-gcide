@@ -109,6 +109,6 @@ stdenv.mkDerivation rec {
         name = "S0AndS0";
       }
     ];
-    platforms = lib.platforms.unix;
+    platforms = lib.platforms.all;
   };
 }
